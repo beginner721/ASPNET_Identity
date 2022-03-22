@@ -22,14 +22,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
 
                 <ul class="navbar-nav">
+                    @*Yönlendirmelere asp-controller belirtilmezse, mevcut actionların controllerını,
+                        o an bulunduğu controller olarak ayarlıyor.*@
                     <li class="nav-item">
-                        <a class="nav-link active" asp-action="Index">Home</a>
+                        <a class="nav-link active" asp-action="Index" asp-controller="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" asp-action="SignUp">Üye Ol</a>
+                        <a class="nav-link active" asp-action="SignUp" asp-controller="Home">Üye Ol</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" asp-action="Login">Giriş Yap</a>
+                        <a class="nav-link active" asp-action="Login" asp-controller="Home">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-action="Index" asp-controller="Member">Üye Sayfası1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-action="Index2" asp-controller="Member">Üye Sayfası2</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
